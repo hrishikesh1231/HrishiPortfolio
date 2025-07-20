@@ -21,6 +21,7 @@ const Contact = () => {
     };
     emailjs.send(serviceId, templateId, templateParams,publicKey).then(
       (response) => {
+        alert("message send successfully!");
         console.log('SUCCESS!', response);
         setName('');
         setEmail('');

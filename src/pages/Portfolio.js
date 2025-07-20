@@ -31,13 +31,13 @@ const Portfolio = () => {
       </p>
 
       <p style={{ fontFamily: "Georgia", fontSize: "1.2rem" }}>Live Link :- </p>
-      {/* <a
-        href="https://your-portfolio-link.com"
+      <a
+        href="https://hrishi-portfolio-sigma.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        https://your-portfolio-link.com
-      </a> */}
+        https://hrishi-portfolio-sigma.vercel.app/
+      </a>
     </div>
   );
 };

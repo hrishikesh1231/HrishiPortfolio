@@ -14,6 +14,7 @@ import Weather from './pages/Weather';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import NotFound from './pages/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
       <Route path='/portfolio' element={<Portfolio/>}></Route>
       <Route path='/contact' element={<Contact/>}></Route>
       <Route path='/resume' element={<Resume/>}></Route>
+      <Route path='*' element={<NotFound/>}></Route>
     </Routes>
   </BrowserRouter>
 );

@@ -29,8 +29,8 @@ const Zerodha = () => {
   </p>
 
   <p style={{ fontFamily: "Georgia", fontSize: "1.2rem" }}>Live Link :- </p>
-  <a href='https://zerodha-clone-frontend.vercel.app' target='_blank' rel='noopener noreferrer'>
-    https://zerodha-clone-frontend.vercel.app
+  <a href='https://zerodha-frontend-kappa-dun.vercel.app' target='_blank' rel='noopener noreferrer'>
+    https://zerodha-frontend-kappa-dun.vercel.app
   </a>
 </div>
 

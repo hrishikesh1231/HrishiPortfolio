@@ -10,8 +10,8 @@ const Hero = () => {
                 {/* <h1>Gaonkar</h1> */}
                 <p style={{fontSize:"2rem",fontFamily:"fantacy",color:"#90e0ef"}}>Software Developer</p>
                 <div className='social-icons'style={{textDecoration:"none"}}>
-                  <a  href='https://www.linkedin.com/in/hrishikesh-gaonkar-64519631b' target="_blank" style={{textDecoration:"none"}}><i style={{marginRight:"1.4rem"}} className="fa-brands fa-linkedin fs-1" ></i></a>
-                  <a href='https://github.com/hrishikesh1231' target="_blank" style={{textDecoration:"none"}} ><i className="fa-brands fa-github fs-1"></i></a>
+                  <a  href='https://www.linkedin.com/in/hrishikesh-gaonkar-64519631b' target="_blank" rel="noreferrer" style={{textDecoration:"none"}}><i style={{marginRight:"1.4rem"}} className="fa-brands fa-linkedin fs-1" ></i></a>
+                  <a href='https://github.com/hrishikesh1231' target="_blank" rel="noreferrer" style={{textDecoration:"none"}} ><i className="fa-brands fa-github fs-1"></i></a>
                 </div>
             </div>
             <div className='col-12 col-md-6 p-5 text-center'>

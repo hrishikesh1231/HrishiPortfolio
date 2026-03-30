@@ -9,19 +9,34 @@ body {
   color: aliceblue;
 }
 
-.Navbar{
-  margin-left: 20rem;
-  padding-left: 10rem;
+@media (min-width: 992px) {
+  .Navbar {
+    margin-left: 20rem;
+    padding-left: 10rem;
+  }
+  .logo {
+    padding-left: 10rem;
+  }
+  .Navbar li {
+    margin-left: 3rem;
+  }
 }
-.logo{
-  padding-left: 10rem;
+
+@media (max-width: 991px) {
+  .logo {
+    padding-left: 1rem;
+  }
+  .Navbar li {
+    margin-left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
-.Navbar li{
-  margin-left: 3rem;
-}
+
 .Cards{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-evenly;
   padding: 2rem;
+  gap: 2rem;
 }

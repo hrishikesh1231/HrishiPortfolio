@@ -7,7 +7,7 @@ const Portfolio = () => {
 
       <img
         src="media/portFolio.png" // update this path to your actual screenshot
-        style={{ width: "50rem", borderRadius: "1rem", marginTop: "2rem" ,border:"1px solid white"}}
+        style={{ maxWidth: "100%", width: "50rem", borderRadius: "1rem", marginTop: "2rem" ,border:"1px solid white"}}
         alt="Portfolio Screenshot"
       />
 

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='container mt-5'>
         <div className='row p-5'>
-            <div style={{marginTop:"3rem"}} className='col-6 p-5'>
+            <div style={{marginTop:"3rem"}} className='col-12 col-md-6 p-5'>
                 <h3 >Hello</h3>
                 <h1 style={{fontSize:"4rem"}}>I am <span style={{color:"yellow"}} >Hrishikesh</span> Gaonkar</h1>
                 {/* <h1>Gaonkar</h1> */}
@@ -14,8 +14,8 @@ const Hero = () => {
                   <a href='https://github.com/hrishikesh1231' target="_blank" style={{textDecoration:"none"}} ><i className="fa-brands fa-github fs-1"></i></a>
                 </div>
             </div>
-            <div className='col-6 p-5'>
-                <img style={{width:"20rem",borderRadius:"30px",marginLeft:"3rem"}} src='hrishi.jpg'/>
+            <div className='col-12 col-md-6 p-5 text-center'>
+                <img style={{maxWidth:"100%", width:"20rem", borderRadius:"30px"}} className="img-fluid" src='hrishi.jpg' alt='Hrishikesh' />
             </div>
         </div>       
     </div>

@@ -5,7 +5,7 @@ const About = () => {
     <div  className='container mt-5'>
       <h1 className='text-center' style={{color:"yellow",marginTop:"7rem"}}>About Me</h1>
       <div className='row'>
-        <div style={{lineHeight:"2rem"}}  className='col-6 p-5'>
+        <div style={{lineHeight:"2rem"}}  className='col-12 col-lg-6 p-5'>
             <h3 style={{color:"#90e0ef"}}>Technical skills:-</h3>
             <p>I possess strong programming skills in Java, C, and Python. On the frontend, I am proficient in HTML, CSS, and JavaScript, allowing me to build responsive and user-friendly interfaces. My backend experience includes working with Node.js, Express, MongoDB, and SQL, and I have hands-on experience creating RESTful APIs for full-stack web applications. I am also well-versed in using Git and GitHub for version control and collaborative development. I enjoy building scalable web applications and deploying them using platforms like Render and Vercel.</p>
             <div>
@@ -19,7 +19,7 @@ const About = () => {
                 <i class="fa-brands fa-java fs-1  p-3"></i>
             </div>
         </div>
-        <div style={{lineHeight:"2rem"}} className='col-6 p-5'>
+        <div style={{lineHeight:"2rem"}} className='col-12 col-lg-6 p-5'>
            <p> Hello! I'm <strong>Hrishikesh Prabhakar Gaonkar</strong>, a 20-year-old Computer Science & AIML student at
             <strong> Finolex Academy of Management and Technology, Ratnagiri</strong>.</p>
             <p className="text-lg mb-4">

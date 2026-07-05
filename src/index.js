@@ -15,6 +15,9 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
+import Taskora from './pages/Taskora';
+import GavathiPoint from './pages/Gavathipoint';
+import Vitto from './pages/Vitto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +27,9 @@ root.render(
       <Route path="/" element={<Home/>}></Route>
       <Route path='/about' element={<About/>}></Route>
       <Route path='/project' element={<Projects/>}></Route>
+      <Route path='/taskora' element={<Taskora/>}></Route>
+      <Route path='/gavathi' element={<GavathiPoint/>}></Route>
+      <Route path='/vitto' element={<Vitto/>}></Route>
       <Route path='/wanderlust' element={<WanderLust/>}></Route>
       <Route path='/zerodha' element={<Zerodha/>}></Route>
       <Route path='/forever' element={<Forever/>}></Route>

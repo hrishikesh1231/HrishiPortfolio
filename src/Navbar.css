@@ -1,0 +1,158 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+
+.custom-navbar{
+    padding:18px 0;
+    background:rgba(10,15,35,.75);
+    backdrop-filter:blur(14px);
+    transition:.4s;
+    z-index:9999;
+
+}
+
+.custom-navbar.scrolled{
+    background:#0b1120;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+    padding:14px 0;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo{
+    color:white !important;
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#3b82f6;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.navbar-nav{
+    gap:25px;
+}
+
+.custom-navbar .nav-link{
+    color:#d1d5db !important;
+    font-weight:500;
+    font-size:16px;
+    transition:.3s;
+    position:relative;
+}
+
+.custom-navbar .nav-link:hover{
+    color:#3b82f6 !important;
+}
+
+.custom-navbar .nav-link.active{
+    color:#3b82f6 !important;
+}
+
+.custom-navbar .nav-link::after{
+
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-6px;
+    background:#3b82f6;
+    transition:.3s;
+
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after{
+
+    width:100%;
+
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.resume-btn{
+
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+.resume-btn:hover{
+
+    color:white;
+    background:#1d4ed8;
+    transform:translateY(-2px);
+
+}
+
+/* ========================= */
+/* TOGGLER */
+/* ========================= */
+
+.navbar-toggler{
+
+    border:1px solid rgba(255,255,255,.4);
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+/* Makes the hamburger white */
+
+.navbar-toggler-icon{
+
+    filter:invert(1);
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:991px){
+
+    .navbar-collapse{
+
+        background:#111827;
+        margin-top:18px;
+        border-radius:12px;
+        padding:20px;
+
+    }
+
+    .navbar-nav{
+
+        gap:12px;
+        text-align:center;
+
+    }
+
+    .resume-btn{
+
+        display:block;
+        margin-top:20px;
+        text-align:center;
+
+    }
+
+}

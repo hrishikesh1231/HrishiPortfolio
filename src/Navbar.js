@@ -1,43 +1,94 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import "./Navbar.css"
 
 const Navbar = () => {
-  return (
-    <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-            <a className="navbar-brand logo" href="/" style={{color:"#a2d2ff",fontFamily:"cursive",fontWeight:"bold"}}>Hrishikesh</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav Navbar">
-                <li className="nav-item">
-                {/* <a className="nav-link" href="/">Home</a> */}
-                <Link className="nav-link" to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
-                </li>
-                <li className="nav-item">
-                {/* <a className="nav-link" href="">About</a> */}
-                <Link className="nav-link" to="/about" onClick={() => window.scrollTo(0, 0)}>About</Link>
-                </li>
-                <li className="nav-item">
-                {/* <a className="nav-link" href="#">Resume</a> */}
-                <Link className="nav-link" to="/resume" onClick={() => window.scrollTo(0, 0)}>Resume</Link>
-                </li>
-                <li className="nav-item">
-                {/* <a className="nav-link" href="#">Projects</a> */}
-                <Link className="nav-link" to="/project" onClick={() => window.scrollTo(0, 0)}>Projects</Link>
-                </li>
-                <li className="nav-item">
-                {/* <a className="nav-link ">Contact</a> */}
-                <Link className="nav-link" to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
-    </div>
-  )
-}
+  const [scroll, setScroll] = useState(false);
 
-export default Navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY >= 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`navbar navbar-expand-lg fixed-top custom-navbar ${scroll ? "scrolled" : ""}`}>
+      <div className="container" >
+
+        {/* Logo */}
+
+        <Link
+          className="navbar-brand logo"
+          to="/"
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Hrishikesh<span>.</span>
+        </Link>
+
+        {/* Toggle */}
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+
+          <ul className="navbar-nav mx-auto">
+
+            <li className="nav-item">
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/about" className="nav-link">
+                About
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/project" className="nav-link">
+                Projects
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/resume" className="nav-link">
+                Resume
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/contact" className="nav-link">
+                Contact
+              </NavLink>
+            </li>
+
+          </ul>
+
+          <a
+  href="/media/Hrishikesh_Gaonkar_Resume.pdf"
+  download="Hrishikesh_Gaonkar_Resume.pdf"
+  className="resume-btn"
+>
+  Download CV
+</a>
+
+        </div>
+
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

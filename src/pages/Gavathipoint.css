@@ -1,0 +1,1194 @@
+/* =========================================================
+   GAVATHIPOINT.CSS
+   PART 1
+   Global + Hero + Overview + Problem + Solution
+========================================================= */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#0f172a;
+    color:#fff;
+}
+
+/* ===========================
+        MAIN PAGE
+=========================== */
+
+.gavathi-page{
+    width:100%;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top,#1e293b 0%,#0f172a 55%,#020617 100%);
+    overflow:hidden;
+}
+
+/* ===========================
+        COMMON
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.4rem;
+    font-weight:700;
+    margin-bottom:60px;
+    color:#fff;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#38bdf8;
+    display:block;
+    margin:18px auto 0;
+    border-radius:30px;
+}
+
+.dark-section{
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(15px);
+}
+
+/* ===========================
+            HERO
+=========================== */
+
+.gavathi-hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,
+    rgba(56,189,248,.15),
+    transparent 40%),
+    radial-gradient(circle at bottom left,
+    rgba(14,165,233,.12),
+    transparent 45%);
+}
+
+.hero-wrapper{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:70px;
+    align-items:center;
+    position:relative;
+    z-index:10;
+}
+
+.project-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#1e293b;
+    color:#38bdf8;
+    font-size:.9rem;
+    letter-spacing:1px;
+    margin-bottom:25px;
+    border:1px solid rgba(56,189,248,.35);
+}
+
+.hero-left h1{
+    font-size:4.5rem;
+    line-height:1.05;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.hero-left h1 span{
+    color:#38bdf8;
+}
+
+.hero-subtitle{
+    font-size:1.15rem;
+    color:#cbd5e1;
+    line-height:1.9;
+    max-width:650px;
+    margin-bottom:40px;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:14px;
+    transition:.35s;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:#02131f;
+}
+
+.btn-primary:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 40px rgba(56,189,248,.35);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    background:#1e293b;
+    transform:translateY(-6px);
+}
+
+/* Hero Card */
+
+.hero-right{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-card{
+    width:360px;
+    padding:45px;
+    text-align:center;
+    border-radius:25px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.hero-card:hover{
+    transform:translateY(-10px);
+}
+
+.hero-icon{
+    font-size:4rem;
+    color:#38bdf8;
+    margin-bottom:25px;
+}
+
+.hero-card h3{
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+.hero-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ===========================
+      OVERVIEW SECTION
+=========================== */
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.overview-card{
+    background:rgba(255,255,255,.05);
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.overview-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+}
+
+.overview-icon{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.overview-card h3{
+    margin-bottom:18px;
+    font-size:1.35rem;
+}
+
+.overview-card p{
+    color:#cbd5e1;
+    line-height:1.9;
+}
+
+/* ===========================
+        PROBLEM
+=========================== */
+
+.problem-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.04);
+    padding:45px;
+    border-radius:20px;
+    border-left:5px solid #38bdf8;
+}
+
+.problem-box p{
+    color:#dbe4ef;
+    line-height:2;
+    margin-bottom:20px;
+    font-size:1.05rem;
+}
+
+.problem-box p:last-child{
+    margin-bottom:0;
+}
+
+/* ===========================
+        SOLUTION
+=========================== */
+
+.solution-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.solution-card{
+    background:#132238;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid transparent;
+}
+
+.solution-card:hover{
+    border-color:#38bdf8;
+    transform:translateY(-10px);
+}
+
+.solution-icon{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.solution-card h3{
+    margin-bottom:15px;
+    font-size:1.35rem;
+}
+
+.solution-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+/* =========================================================
+   GAVATHIPOINT.CSS
+   PART 2
+   Features + Tech Stack + Architecture + Authentication
+   + Database Design
+=========================================================*/
+
+/* ===========================
+        FEATURES
+=========================== */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.35s ease;
+    backdrop-filter:blur(12px);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 20px 40px rgba(56,189,248,.15);
+}
+
+.feature-icon{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:22px;
+}
+
+.feature-card h3{
+    font-size:1.35rem;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.feature-card p{
+    color:#cbd5e1;
+    line-height:1.9;
+    font-size:.97rem;
+}
+
+/* ===========================
+        TECH STACK
+=========================== */
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:28px;
+}
+
+.tech-card{
+    background:#132238;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid transparent;
+}
+
+.tech-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.18);
+}
+
+.tech-icon{
+    font-size:3.4rem;
+    margin-bottom:22px;
+}
+
+/* Individual Colors */
+
+.react{
+    color:#61dafb;
+}
+
+.node{
+    color:#6cc24a;
+}
+
+.mongo{
+    color:#47A248;
+}
+
+.express{
+    color:#ffffff;
+}
+
+.cloud{
+    color:#38bdf8;
+}
+
+.js{
+    color:#f7df1e;
+}
+
+.tech-card h3{
+    margin-bottom:15px;
+    font-size:1.35rem;
+}
+
+.tech-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ===========================
+      ARCHITECTURE
+=========================== */
+
+.architecture{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+}
+
+.architecture-box{
+    width:100%;
+    max-width:760px;
+    background:rgba(255,255,255,.05);
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.architecture-box:hover{
+    transform:translateY(-6px);
+    border-color:#38bdf8;
+}
+
+.architecture-box h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.architecture-box p{
+    color:#dbe4ef;
+    line-height:1.9;
+}
+
+.architecture-arrow{
+    font-size:2rem;
+    color:#38bdf8;
+    animation:floatArrow 1.6s infinite;
+}
+
+@keyframes floatArrow{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+      AUTH FLOW
+=========================== */
+
+.flow-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.flow-card{
+    position:relative;
+    background:#132238;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.flow-card:hover{
+    transform:translateY(-10px);
+}
+
+.flow-card span{
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#38bdf8;
+    color:#02131f;
+    font-weight:700;
+    font-size:1rem;
+}
+
+.flow-card h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    font-size:1.3rem;
+}
+
+.flow-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ===========================
+      DATABASE DESIGN
+=========================== */
+
+.database-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.database-card{
+    background:rgba(255,255,255,.05);
+    border-radius:18px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.database-card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 18px 40px rgba(56,189,248,.15);
+}
+
+.database-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.database-card p{
+    color:#dbe4ef;
+    line-height:1.8;
+}
+/* =========================================================
+   GAVATHIPOINT.CSS
+   PART 3
+   Workflow + Challenges + Learnings + Future
+   Statistics + CTA
+=========================================================*/
+
+/* ===========================
+        ORDER WORKFLOW
+=========================== */
+
+.workflow{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.workflow-step{
+    flex:1;
+    min-width:220px;
+    max-width:240px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.35s;
+}
+
+.workflow-step:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.18);
+}
+
+.workflow-step span{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#38bdf8;
+    color:#02131f;
+    font-size:1.2rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.workflow-step h3{
+    margin-bottom:15px;
+    font-size:1.25rem;
+    color:#fff;
+}
+
+.workflow-step p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.workflow-arrow{
+    font-size:2rem;
+    color:#38bdf8;
+    align-self:center;
+    font-weight:700;
+}
+
+/* ===========================
+        CHALLENGES
+=========================== */
+
+.challenge-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.challenge-card{
+    background:#132238;
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+    border:1px solid transparent;
+}
+
+.challenge-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+}
+
+.challenge-card h3{
+    color:#38bdf8;
+    margin-bottom:18px;
+    font-size:1.35rem;
+}
+
+.challenge-card p{
+    color:#dbe4ef;
+    line-height:1.8;
+}
+
+/* ===========================
+        LEARNINGS
+=========================== */
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.learning-card{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.learning-card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.learning-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:1.35rem;
+}
+
+.learning-card p{
+    color:#dbe4ef;
+    line-height:1.8;
+}
+
+/* ===========================
+      FUTURE ENHANCEMENTS
+=========================== */
+
+.future-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.future-card{
+    background:#132238;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:600;
+    color:#fff;
+    border:1px solid rgba(56,189,248,.2);
+    transition:.35s;
+}
+
+.future-card:hover{
+    background:#38bdf8;
+    color:#02131f;
+    transform:translateY(-8px);
+}
+
+/* ===========================
+      PROJECT STATISTICS
+=========================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.stat-card{
+    background:linear-gradient(135deg,#132238,#1e3a5f);
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    transition:.35s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.stat-card h2{
+    color:#38bdf8;
+    font-size:2.3rem;
+    margin-bottom:15px;
+}
+
+.stat-card p{
+    color:#dbe4ef;
+    font-size:1rem;
+}
+
+/* ===========================
+        CTA SECTION
+=========================== */
+
+.cta-section{
+    padding-bottom:100px;
+}
+
+.cta-box{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    border:1px solid rgba(56,189,248,.25);
+    border-radius:25px;
+    padding:70px 40px;
+    text-align:center;
+}
+
+.cta-box h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.cta-box p{
+    max-width:700px;
+    margin:0 auto 35px;
+    color:#cbd5e1;
+    line-height:1.9;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* ===========================
+      SIMPLE ANIMATIONS
+=========================== */
+
+.overview-card,
+.solution-card,
+.feature-card,
+.tech-card,
+.database-card,
+.challenge-card,
+.learning-card,
+.future-card,
+.stat-card,
+.workflow-step,
+.hero-card{
+    animation:fadeUp .8s ease both;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/* =========================================================
+   GAVATHIPOINT.CSS
+   PART 4
+   Responsive Design + Final Polish
+=========================================================*/
+
+/* ===========================
+      LARGE TABLETS
+=========================== */
+
+@media (max-width:1200px){
+
+    .hero-wrapper{
+        gap:50px;
+    }
+
+    .hero-left h1{
+        font-size:3.8rem;
+    }
+
+    .hero-card{
+        width:320px;
+    }
+
+}
+
+/* ===========================
+        TABLETS
+=========================== */
+
+@media (max-width:992px){
+
+    .section{
+        padding:70px 0;
+    }
+
+    .hero-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-left{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-left h1{
+        font-size:3.3rem;
+    }
+
+    .hero-subtitle{
+        max-width:700px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-card{
+        width:100%;
+        max-width:420px;
+    }
+
+    .overview-grid,
+    .solution-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .workflow{
+        justify-content:center;
+    }
+
+    .workflow-arrow{
+        display:none;
+    }
+
+    .cta-box{
+        padding:60px 35px;
+    }
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-title{
+        font-size:2rem;
+        margin-bottom:45px;
+    }
+
+    .hero-left h1{
+        font-size:2.8rem;
+        line-height:1.2;
+    }
+
+    .hero-subtitle{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:320px;
+        justify-content:center;
+    }
+
+    .overview-grid,
+    .solution-grid,
+    .features-grid,
+    .tech-grid,
+    .database-grid,
+    .challenge-grid,
+    .learning-grid,
+    .future-grid,
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .overview-card,
+    .solution-card,
+    .feature-card,
+    .tech-card,
+    .database-card,
+    .challenge-card,
+    .learning-card,
+    .future-card,
+    .stat-card{
+        padding:28px;
+    }
+
+    .workflow{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .workflow-step{
+        max-width:100%;
+        width:100%;
+    }
+
+    .workflow-arrow{
+        display:none;
+    }
+
+    .architecture-box{
+        padding:28px;
+    }
+
+    .problem-box{
+        padding:30px;
+    }
+
+    .cta-box{
+        padding:45px 25px;
+    }
+
+    .cta-box h2{
+        font-size:2rem;
+    }
+
+    .cta-box p{
+        font-size:.95rem;
+    }
+
+    .cta-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary{
+        width:100%;
+        max-width:320px;
+        justify-content:center;
+    }
+
+}
+
+/* ===========================
+      SMALL MOBILE
+=========================== */
+
+@media (max-width:576px){
+
+    .project-tag{
+        font-size:.75rem;
+        padding:7px 15px;
+    }
+
+    .hero-left h1{
+        font-size:2.2rem;
+    }
+
+    .hero-subtitle{
+        font-size:.95rem;
+    }
+
+    .hero-card{
+        padding:30px 22px;
+    }
+
+    .hero-icon{
+        font-size:3rem;
+    }
+
+    .hero-card h3{
+        font-size:1.5rem;
+    }
+
+    .section-title{
+        font-size:1.75rem;
+    }
+
+    .overview-icon,
+    .solution-icon,
+    .feature-icon,
+    .tech-icon{
+        font-size:2.6rem;
+    }
+
+    .workflow-step span{
+        width:50px;
+        height:50px;
+        font-size:1rem;
+    }
+
+    .stat-card h2{
+        font-size:2rem;
+    }
+
+    .cta-box h2{
+        font-size:1.8rem;
+    }
+
+}
+
+/* ===========================
+      CUSTOM SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0ea5e9;
+}
+
+/* ===========================
+      TEXT SELECTION
+=========================== */
+
+::selection{
+    background:#38bdf8;
+    color:#02131f;
+}
+
+/* ===========================
+      SMOOTH HOVER EFFECTS
+=========================== */
+
+.btn-primary,
+.btn-secondary,
+.overview-card,
+.solution-card,
+.feature-card,
+.tech-card,
+.database-card,
+.challenge-card,
+.learning-card,
+.future-card,
+.stat-card,
+.workflow-step,
+.hero-card,
+.architecture-box{
+    will-change:transform;
+}
+
+/* ===========================
+      IMAGE SUPPORT
+=========================== */
+
+.project-image,
+.project-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.project-image img{
+    object-fit:cover;
+    transition:.4s;
+}
+
+.project-image:hover img{
+    transform:scale(1.04);
+}
+
+/* ===========================
+      FINAL SPACING
+=========================== */
+
+.hero-left,
+.hero-right,
+.overview-card,
+.solution-card,
+.feature-card,
+.tech-card,
+.database-card,
+.challenge-card,
+.learning-card,
+.future-card,
+.stat-card{
+    position:relative;
+    z-index:2;
+}
+
+.section:last-child{
+    margin-bottom:0;
+}

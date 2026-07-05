@@ -1,43 +1,155 @@
-import React from 'react'
+import React from "react";
+import "./About.css"
 
 const About = () => {
   return (
-    <div  className='container mt-5'>
-      <h1 className='text-center' style={{color:"yellow",marginTop:"7rem"}}>About Me</h1>
-      <div className='row'>
-        <div style={{lineHeight:"2rem"}}  className='col-12 col-lg-6 p-5'>
-            <h3 style={{color:"#90e0ef"}}>Technical skills:-</h3>
-            <p>I possess strong programming skills in Java, C, and Python. On the frontend, I am proficient in HTML, CSS, and JavaScript, allowing me to build responsive and user-friendly interfaces. My backend experience includes working with Node.js, Express, MongoDB, and SQL, and I have hands-on experience creating RESTful APIs for full-stack web applications. I am also well-versed in using Git and GitHub for version control and collaborative development. I enjoy building scalable web applications and deploying them using platforms like Render and Vercel.</p>
-            <div>
-                <i class="fa-brands fa-html5 fs-1 p-3"></i>
-                <i class="fa-brands fa-css fs-1  p-3"></i>
-                <i class="fa-brands fa-js fs-1  p-3"></i>
-                <i class="fa-brands fa-react fs-1  p-3"></i>
-                <i class="fa-brands fa-node fs-1  p-3"></i>
-                <i class="fa-solid fa-database fs-1  p-3"></i>
-                <i class="fa-brands fa-python fs-1  p-3"></i>
-                <i class="fa-brands fa-java fs-1  p-3"></i>
-            </div>
-        </div>
-        <div style={{lineHeight:"2rem"}} className='col-12 col-lg-6 p-5'>
-           <p> Hello! I'm <strong>Hrishikesh Prabhakar Gaonkar</strong>, a 20-year-old Computer Science & AIML student at
-            <strong> Finolex Academy of Management and Technology, Ratnagiri</strong>.</p>
-            <p className="text-lg mb-4">
-                I'm passionate about full-stack web development and cloud computing. I specialize in building modern, responsive
-                websites using the <strong>MERN stack (MongoDB, Express, React, Node.js)</strong>. I also work with AWS services like Lambda, S3,
-                and RDS for cloud-based apps.
-            </p>
-            <div>
-                <span>Profile</span> : <span>Software engineer</span><br/>
-                <span>Experience</span> : <span>Fresher</span><br/>
-                <span>Skills</span> : <span>java , C , python , HTML , CSS , Js , Nodejs , Express , MongoDB , SQL, git / github.</span><br/>
-                <span>Contact</span> : <span>8010773559</span><br/>
+    <section className="about-section container">
 
-            </div>
-        </div>
+      <div className="text-center mb-5">
+
+        <span className="section-tag">
+          ABOUT ME
+        </span>
+
+        <h2 className="section-title">
+          Building Modern Web Experiences
+        </h2>
+
+        <p className="section-subtitle">
+          Passionate Software Engineer focused on scalable web applications,
+          clean architecture and user-centric design.
+        </p>
+
       </div>
-    </div>
-  )
-}
 
-export default About
+      <div className="row align-items-center gy-5">
+
+        {/* LEFT */}
+
+        <div className="col-lg-6">
+
+          <div className="about-card">
+
+            <h3>Who I Am</h3>
+
+            <p>
+              I'm <strong>Hrishikesh Gaonkar</strong>, a Computer Science (AI &
+              ML) graduate passionate about building scalable, real-world web
+              applications using the MERN Stack.
+            </p>
+
+            <p>
+              I have built and deployed <strong>5+ full-stack projects</strong>
+              featuring secure authentication, REST APIs, payment integration,
+              cloud deployment, and responsive user interfaces.
+            </p>
+
+            <p>
+              I'm currently strengthening my skills in
+              <strong> AWS Cloud, Docker, CI/CD, Python, Data Analytics</strong>
+              while preparing for Software Engineer opportunities.
+            </p>
+
+            <div className="row mt-4">
+
+              <div className="col-6">
+
+                <div className="info-box">
+                  <small>Role</small>
+                  <h6>Software Engineer</h6>
+                </div>
+
+              </div>
+
+              <div className="col-6">
+
+                <div className="info-box">
+                  <small>Experience</small>
+                  <h6>Fresher</h6>
+                </div>
+
+              </div>
+
+              <div className="col-6 mt-3">
+
+                <div className="info-box">
+                  <small>Projects</small>
+                  <h6>5+</h6>
+                </div>
+
+              </div>
+
+              <div className="col-6 mt-3">
+
+                <div className="info-box">
+                  <small>Location</small>
+                  <h6>India</h6>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* RIGHT */}
+
+        <div className="col-lg-6">
+
+          <div className="about-card">
+
+            <h3>Tech Stack</h3>
+
+            <p className="mb-4">
+              Technologies I use to build scalable applications.
+            </p>
+
+            <div className="tech-icons">
+
+              <i className="fa-brands fa-html5"></i>
+              <i className="fa-brands fa-css3-alt"></i>
+              <i className="fa-brands fa-js"></i>
+              <i className="fa-brands fa-react"></i>
+              <i className="fa-brands fa-node-js"></i>
+              <i className="fa-solid fa-database"></i>
+              <i className="fa-brands fa-python"></i>
+              <i className="fa-brands fa-java"></i>
+              <i className="fa-brands fa-git-alt"></i>
+              <i className="fa-brands fa-github"></i>
+              <i className="fa-brands fa-docker"></i>
+              <i className="fa-brands fa-aws"></i>
+
+            </div>
+
+            <hr />
+
+            <div className="skill-grid">
+
+              <span>MERN Stack</span>
+              <span>Java</span>
+              <span>Python</span>
+              <span>REST APIs</span>
+              <span>MongoDB</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Git & GitHub</span>
+              <span>Docker</span>
+              <span>AWS</span>
+              <span>CI/CD</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default About;

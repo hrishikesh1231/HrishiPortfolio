@@ -1,0 +1,156 @@
+.resume-page{
+    min-height:100vh;
+    padding:120px 0;
+    background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+    color:#fff;
+}
+
+.resume-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.resume-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#1e293b;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.resume-header h1{
+    font-size:3.8rem;
+    margin-bottom:20px;
+}
+
+.resume-header span{
+    color:#38bdf8;
+}
+
+.resume-header p{
+    max-width:750px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.resume-content{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.resume-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+}
+
+.resume-card img{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:25px;
+    border:5px solid #38bdf8;
+}
+
+.resume-card h2{
+    margin-bottom:10px;
+}
+
+.resume-card p{
+    color:#38bdf8;
+    margin-bottom:30px;
+}
+
+.resume-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.resume-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:15px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resume-btn.primary{
+    background:#38bdf8;
+    color:#02131f;
+}
+
+.resume-btn.secondary{
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.resume-btn:hover{
+    transform:translateY(-5px);
+}
+
+.resume-highlights{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.highlight-card{
+    background:rgba(255,255,255,.05);
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.highlight-card svg{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+    border:1px solid #38bdf8;
+}
+
+@media(max-width:992px){
+
+.resume-content{
+grid-template-columns:1fr;
+}
+
+.resume-card{
+max-width:450px;
+margin:auto;
+}
+
+}
+
+@media(max-width:768px){
+
+.resume-header h1{
+font-size:2.7rem;
+}
+
+.resume-highlights{
+grid-template-columns:1fr;
+}
+
+.resume-card img{
+width:180px;
+height:180px;
+}
+
+}

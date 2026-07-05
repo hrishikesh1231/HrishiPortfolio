@@ -63,7 +63,7 @@ const Vitto = () => {
             <div className="hero-buttons">
 
               <a
-                href="#"
+                href="https://vitto-frontend-psi.vercel.app/"
                 className="btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const Vitto = () => {
               </a>
 
               <a
-                href="https://github.com/hrishikesh1231"
+                href="https://github.com/hrishikesh1231/Vito-Assignment"
                 className="btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -827,7 +827,7 @@ const Vitto = () => {
             <div className="cta-buttons">
 
               <a
-                href="#"
+                href="https://vitto-frontend-psi.vercel.app/"
                 className="btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -837,7 +837,7 @@ const Vitto = () => {
               </a>
 
               <a
-                href="https://github.com/hrishikesh1231"
+                href="https://github.com/hrishikesh1231/Vito-Assignment"
                 className="btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"

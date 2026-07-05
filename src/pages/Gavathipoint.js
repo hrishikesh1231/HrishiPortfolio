@@ -24,7 +24,7 @@ import {
   SiExpress,
   SiJavascript,
   SiCloudinary,
-  SiTailwindcss,
+//   SiTailwindcss,
   SiJsonwebtokens,
 } from "react-icons/si";
 
